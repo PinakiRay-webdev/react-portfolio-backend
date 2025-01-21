@@ -1,3 +1,5 @@
+//this is the server
+
 require("dotenv").config();
 const express = require("express");
 const { default: mongoose } = require("mongoose");
