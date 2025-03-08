@@ -1,5 +1,3 @@
-//this is the server
-
 require("dotenv").config();
 const express = require("express");
 const { default: mongoose } = require("mongoose");
@@ -14,6 +12,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
     origin: ["http://localhost:3000", "https://mern-portfolio-app.onrender.com"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
   })
 );
 
